@@ -11,9 +11,20 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    print_hi('it\'s Greenerside!')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
 
-#test change in main.py
+class Item:
+    def __init__(self, title, itemtype, itemstate, gradient):
+        self.title = title
+        self.itemtype = itemtype
+        self.itemstate = itemstate
+        self.gradient = gradient
+
+# making test entity to see if the class works - remove later
+Task1 = Item('Task1', 'project', 'active', 2)
+
+print(Task1.title, Task1.itemtype, Task1.itemstate, Task1.gradient)
+# end of making test entity to see if the class works - remove later
